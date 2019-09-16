@@ -9,3 +9,17 @@
     font-size: calc(10px + 2vmin);
     color: white;
   }
+
+  #navMenuButton {
+    height: 5vh;
+    width: 5vh;
+    margin-right: 1vw;
+    color: white;
+    background-color: rgba(100, 94, 94, 0.514);
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(255,255,255,0.3);
+  }
+
+  #navMenuButton:focus {
+    outline: 0;
+  }

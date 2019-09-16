@@ -7,7 +7,7 @@ function NavMenu() {
     const [contactMenu, setContactMenu] = useState(false);
 
     return (
-        <div>
+        <div id='navMenu'>
             <p>Home</p>
             <p>Projects</p>
             <p>Contact</p>
