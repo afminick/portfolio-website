@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './Header.css';
 import NavMenu from './NavMenu'
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 function Header() {
 
@@ -14,7 +15,7 @@ function Header() {
                 name="navMenu"
                 style={navMenuOpen ? {boxShadow: '-1px -1px 1px 1px rgba(255,255,255,0.3)'} : null} 
                 onClick={() => setNavMenuOpen(!navMenuOpen)}>
-                
+                <FontAwesomeIcon icon="bars" size='2x' color="yellow" />
             </button>
             {navMenuOpen ? <NavMenu /> : null}
         </div>
