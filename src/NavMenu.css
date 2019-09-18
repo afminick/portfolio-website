@@ -1,8 +1,17 @@
 #navMenu {
     z-index: 1000;
-    background-color: rgba(0,0,0,0.8);
-    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(151, 151, 151, 0.9);
+    width: 60vw;
     position: absolute;
     top: 5vh;
     right: 15vw;
+}
+
+#contactMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.1)
 }
