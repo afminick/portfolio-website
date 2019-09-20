@@ -5,7 +5,7 @@ import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 function Header() {
 
-    const [navMenuOpen, setNavMenuOpen] = useState(false);
+    const [navMenuOpen, setNavMenuOpen] = useState(true);
 
     return(
         <div className='App-header'>
@@ -13,9 +13,9 @@ function Header() {
             <button 
                 id='navMenuButton' 
                 name="navMenu"
-                style={navMenuOpen ? {boxShadow: '-1px -1px 1px 1px rgba(255,255,255,0.3)'} : null} 
+                 
                 onClick={() => setNavMenuOpen(!navMenuOpen)}>
-                <FontAwesomeIcon icon="bars" size='2x' color="yellow" />
+                <FontAwesomeIcon icon="bars" size='2x' color={navMenuOpen ? "lightgrey" : "red"} />
             </button>
             {navMenuOpen ? <NavMenu /> : null}
         </div>

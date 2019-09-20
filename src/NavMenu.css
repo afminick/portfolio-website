@@ -7,11 +7,23 @@
     position: absolute;
     top: 5vh;
     right: 15vw;
+    
 }
 
-#contactMenu {
+.navSubMenuButton {
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    border-bottom: 1px solid blue;
+}
+
+.navSubMenuButton:focus {
+    outline: none;
+}
+
+.contactMenu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: rgba(0,0,0,0.1)
+    width: 100%;
+    background-color: rgba(0,0,0,0.5)
 }
