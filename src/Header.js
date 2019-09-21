@@ -15,7 +15,7 @@ function Header() {
                 name="navMenu"
                  
                 onClick={() => setNavMenuOpen(!navMenuOpen)}>
-                <FontAwesomeIcon icon="bars" size='2x' color={navMenuOpen ? "lightgrey" : "red"} />
+                <FontAwesomeIcon icon="bars" size='2x' color={navMenuOpen ? "lightgrey" : "rgb(31,36,22)"} />
             </button>
             {navMenuOpen ? <NavMenu /> : null}
         </div>

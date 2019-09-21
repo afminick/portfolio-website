@@ -9,7 +9,7 @@ function NavMenu() {
 
     return (
         <div id='navMenu'>
-            <p>Home</p>
+            <button className="navSubMenuButton">Home</button>
             <button className="navSubMenuButton" onClick={() => setProjectsMenu(!projectsMenu)}>Projects</button>
             <button className="navSubMenuButton" onClick={() => setContactMenu(!contactMenu)}>Contact</button>
             {contactMenu ? <ContactMenu /> : null}
@@ -19,7 +19,7 @@ function NavMenu() {
 
 function ContactMenu() {
     return (
-        <div className='contactMenu'>
+        <div className='subMenu'>
             <FontAwesomeIcon icon="envelope" size='2x' /> 
             <FontAwesomeIcon icon={['fab', 'facebook-square']} size='2x' /> 
             <FontAwesomeIcon icon={['fab', 'instagram']} size='2x' /> 

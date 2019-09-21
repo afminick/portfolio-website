@@ -1,6 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
+
+/*colors: 
+rgb(31,36,22) blackish
+rgb(136,162,170) pastel blue
+rgb(173,162,150) greyish
+rgb(166,207,213) light blue
+rgb(192,199,129) brown grey
+*/
 
 
 
