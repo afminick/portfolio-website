@@ -11,8 +11,11 @@ class MainBody extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="mainOne">
                 <p>Hello World</p>
+            </div>
+            <div className="mainTwo">
+                <p>Projects I'm working on</p>
             </div>
         )
     }
