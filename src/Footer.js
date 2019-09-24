@@ -6,7 +6,7 @@ function Footer() {
         <footer>
             <p>AMWD</p> 
             <div id='footerContact'>
-                <p>email</p>
+                <p>afminick@gmail.com</p>
             </div>
         </footer>
     )

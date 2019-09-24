@@ -20,7 +20,7 @@ function NavMenu() {
 function ContactMenu() {
     return (
         <div className='subMenu'>
-            <FontAwesomeIcon icon="envelope" size='2x' /> 
+            <a href="mailto:afminick@gmail.com"><FontAwesomeIcon icon="envelope" size='2x' /></a> 
             <FontAwesomeIcon icon={['fab', 'facebook-square']} size='2x' /> 
             <FontAwesomeIcon icon={['fab', 'instagram']} size='2x' /> 
             <FontAwesomeIcon icon={['fab', 'twitter']} size='2x' /> 
