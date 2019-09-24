@@ -21,9 +21,9 @@ function ContactMenu() {
     return (
         <div className='subMenu'>
             <a href="mailto:afminick@gmail.com"><FontAwesomeIcon icon="envelope" size='2x' /></a> 
-            <FontAwesomeIcon icon={['fab', 'facebook-square']} size='2x' /> 
-            <FontAwesomeIcon icon={['fab', 'instagram']} size='2x' /> 
-            <FontAwesomeIcon icon={['fab', 'twitter']} size='2x' /> 
+            <a href="http://www.facebook.com/alexminick"><FontAwesomeIcon icon={['fab', 'facebook-square']} size='2x' /></a> 
+            <a href="http://www.instagram.com/afminick"><FontAwesomeIcon icon={['fab', 'instagram']} size='2x' /></a> 
+            <a href="http://www.twitter.com/afminick"><FontAwesomeIcon icon={['fab', 'twitter']} size='2x' /></a> 
         </div>
     )
 }
