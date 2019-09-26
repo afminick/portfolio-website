@@ -10,6 +10,10 @@
     color: rgb(31,36,22);
   }
 
+  #title {
+    flex:2;
+  }
+
   #navMenuButton {
     height: 4vh;
     width: 4vh;

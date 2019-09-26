@@ -9,7 +9,7 @@ function Header() {
 
     return(
         <div className='App-header'>
-            <h1>Alex Minick</h1>
+            <h1 className='title'>Alex Minick</h1>
             <button 
                 id='navMenuButton' 
                 name="navMenu"

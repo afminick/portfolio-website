@@ -9,9 +9,22 @@ function NavMenu() {
 
     return (
         <div id='navMenu'>
-            <button className="navSubMenuButton">Home</button>
-            <button className="navSubMenuButton" onClick={() => setProjectsMenu(!projectsMenu)}>Projects</button>
-            <button className="navSubMenuButton" onClick={() => setContactMenu(!contactMenu)}>Contact</button>
+            <button 
+                id='homeButton' 
+                className="navSubMenuButton">
+                Home
+            </button>
+            <button 
+                className="navSubMenuButton" 
+                onClick={() => setProjectsMenu(!projectsMenu)}>
+                Projects
+            </button>
+            <button 
+                className="navSubMenuButton" 
+                onClick={() => setContactMenu(!contactMenu)}
+                style={!contactMenu ? {borderRadius: "0 0 5px 5px"} : null}>
+                Contact
+            </button>
             {contactMenu ? <ContactMenu /> : null}
         </div>
     )
@@ -19,11 +32,11 @@ function NavMenu() {
 
 function ContactMenu() {
     return (
-        <div className='subMenu'>
-            <a href="mailto:afminick@gmail.com"><FontAwesomeIcon icon="envelope" size='2x' /></a> 
-            <a href="http://www.facebook.com/alexminick"><FontAwesomeIcon icon={['fab', 'facebook-square']} size='2x' /></a> 
-            <a href="http://www.instagram.com/afminick"><FontAwesomeIcon icon={['fab', 'instagram']} size='2x' /></a> 
-            <a href="http://www.twitter.com/afminick"><FontAwesomeIcon icon={['fab', 'twitter']} size='2x' /></a> 
+        <div className='subMenu' style={{borderRadius: "0 0 5px 5px"}}>
+            <a href="mailto:afminick@gmail.com"><FontAwesomeIcon icon="envelope"  /></a> 
+            <a href="http://www.facebook.com/alexminick"><FontAwesomeIcon icon={['fab', 'facebook-square']}  /></a> 
+            <a href="http://www.instagram.com/afminick"><FontAwesomeIcon icon={['fab', 'instagram']}  /></a> 
+            <a href="http://www.twitter.com/afminick"><FontAwesomeIcon icon={['fab', 'twitter']}  /></a> 
         </div>
     )
 }

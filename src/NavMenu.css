@@ -11,6 +11,10 @@
     
 }
 
+#homeButton {
+    border-radius: 5px 5px 0 0;
+}
+
 .navSubMenuButton {
     background-color: rgba(173,162,150, 0.9);
     height: 5vh;
