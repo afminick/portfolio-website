@@ -10,8 +10,8 @@
     color: rgb(31,36,22);
   }
 
-  #title {
-    flex:2;
+  .title {
+    margin-left: 10px;
   }
 
   #navMenuButton {

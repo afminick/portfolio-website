@@ -1,5 +1,6 @@
 import React from 'react';
 import './MainBody.css';
+import Projects from './Projects';
 
 class MainBody extends React.Component {
     constructor() {
@@ -12,11 +13,11 @@ class MainBody extends React.Component {
     render() {
         return (
             <div className="mainBody">
-              <div className="mainOne">
+              <div className="bio">
                 <p>Hello World</p>
               </div>
-              <div className="mainTwo">
-                <p>Projects I'm working on</p>
+              <div className="projects">
+                <Projects />
               </div>
             </div>
             

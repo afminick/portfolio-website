@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function NavMenu() {
 
     const [projectsMenu, setProjectsMenu] = useState(false);
-    const [contactMenu, setContactMenu] = useState(true);
+    const [contactMenu, setContactMenu] = useState(false);
 
     return (
         <div id='navMenu'>
@@ -19,6 +19,7 @@ function NavMenu() {
                 onClick={() => setProjectsMenu(!projectsMenu)}>
                 Projects
             </button>
+            {projectsMenu ? <ProjectsMenu /> : null}
             <button 
                 className="navSubMenuButton" 
                 onClick={() => setContactMenu(!contactMenu)}
@@ -37,6 +38,14 @@ function ContactMenu() {
             <a href="http://www.facebook.com/alexminick"><FontAwesomeIcon icon={['fab', 'facebook-square']}  /></a> 
             <a href="http://www.instagram.com/afminick"><FontAwesomeIcon icon={['fab', 'instagram']}  /></a> 
             <a href="http://www.twitter.com/afminick"><FontAwesomeIcon icon={['fab', 'twitter']}  /></a> 
+        </div>
+    )
+}
+
+function ProjectsMenu() {
+    return (
+        <div className='subMenu'>
+            <a href="#projects">React</a>
         </div>
     )
 }

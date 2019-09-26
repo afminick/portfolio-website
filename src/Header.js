@@ -5,7 +5,7 @@ import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 function Header() {
 
-    const [navMenuOpen, setNavMenuOpen] = useState(true);
+    const [navMenuOpen, setNavMenuOpen] = useState(false);
 
     return(
         <div className='App-header'>
