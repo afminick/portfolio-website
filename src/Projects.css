@@ -1,0 +1,14 @@
+.projectsSub {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vh 0 2vh 0;
+}
+
+.projectLink {
+    width: 40vw;
+    height: 20vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
